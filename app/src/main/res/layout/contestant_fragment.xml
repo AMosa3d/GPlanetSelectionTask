@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/match_constraints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="2:1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/issue_textView"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorText"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/contestant_list_titles_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/contestant_rank_textView"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="@dimen/match_constraints"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/rank_str"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/contestant_name_textView" />
+
+        <TextView
+            android:id="@+id/contestant_name_textView"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="@dimen/match_constraints"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/reader_name_str"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_weight="4"
+            app:layout_constraintLeft_toRightOf="@id/contestant_rank_textView"
+            app:layout_constraintRight_toLeftOf="@id/contestant_pages_textView" />
+
+        <TextView
+            android:id="@+id/contestant_pages_textView"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_width="@dimen/match_constraints"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/number_of_pages_str"
+            android:textColor="@color/colorText"
+            android:textStyle="bold"
+            app:layout_constraintHorizontal_weight="2"
+            app:layout_constraintLeft_toRightOf="@id/contestant_name_textView"
+            app:layout_constraintRight_toRightOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/contestants_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/match_constraints"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contestant_list_titles_layout" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GPlanetSelectionTask</string>
+
+    <string name="reader_id_str">Reader Id</string>
+    <string name="reader_name_str">Reader Name</string>
+    <string name="reading_id_str">Reading Id</string>
+    <string name="number_of_pages_str"># Pages</string>
+    <string name="pages_interval_str">Pages Interval</string>
+    <string name="pages_interval_hint_str">Pages Interval Ex: 1,3</string>
+    <string name="rank_str">Rank</string>
+    <string name="loading_complete_str">Loading Completed Successfully!</string>
+    <string name="loading_error_str">Loading Error, Please Try Again Later!</string>
+    <string name="empty_list_str">There is no elements, Please add some to the database!</string>
+
+    <string name="database_str">Database</string>
+</resources>

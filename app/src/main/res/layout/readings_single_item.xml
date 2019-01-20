@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/margin_horizontal_single_item"
+    android:layout_marginRight="@dimen/margin_horizontal_single_item"
+    android:layout_marginTop="@dimen/margin_top_single_item">
+
+    <TextView
+        android:id="@+id/readings_id_textView"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorText"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/readings_pages_textView" />
+
+    <TextView
+        android:id="@+id/readings_pages_textView"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorText"
+        app:layout_constraintHorizontal_weight="4"
+        app:layout_constraintLeft_toRightOf="@id/readings_id_textView"
+        app:layout_constraintRight_toLeftOf="@id/reader_id_textView" />
+
+    <TextView
+        android:id="@+id/reader_id_textView"
+        style="@style/TextAppearance.AppCompat.Medium"
+        android:layout_width="@dimen/match_constraints"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textColor="@color/colorText"
+        app:layout_constraintHorizontal_weight="2"
+        app:layout_constraintLeft_toRightOf="@id/readings_pages_textView"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
