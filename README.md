@@ -16,6 +16,8 @@ https://codelabs.developers.google.com/codelabs/android-room-with-a-view
 
 https://medium.com/@Viraj.Tank/android-mvp-that-survives-view-life-cycle-configuration-internet-changes-part-2-6b1e2b5c5294
 
+RoundedImageClass : https://stackoverflow.com/a/16208548/10240833
+
 
 # Screens
 ## 0 - Example of empty tables
