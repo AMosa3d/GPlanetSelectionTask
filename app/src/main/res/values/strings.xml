@@ -12,5 +12,9 @@
     <string name="loading_error_str">Loading Error, Please Try Again Later!</string>
     <string name="empty_list_str">There is no elements, Please add some to the database!</string>
 
+    <string name="first_reader_rank">1</string>
+    <string name="second_reader_rank">2</string>
+    <string name="third_reader_rank">3</string>
+
     <string name="database_str">Database</string>
 </resources>

@@ -4,4 +4,6 @@
     <dimen name="margin_horizontal_single_item">20dp</dimen>
 
     <dimen name="match_constraints">0dp</dimen>
+    <dimen name="elevation_value">8dp</dimen>
+    <dimen name="rank_padding">6dp</dimen>
 </resources>

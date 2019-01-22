@@ -37,7 +37,7 @@ public class ContestantAdapter extends RecyclerView.Adapter<ContestantAdapter.Co
     @Override
     public void onBindViewHolder(@NonNull ContestantViewHolder holder, int position) {
         Contestant currentContestant = constantsList.get(position);
-        holder.bind(position+1, currentContestant.getName(), currentContestant.getNumberOfPages());
+        holder.bind(position+4, currentContestant.getName(), currentContestant.getNumberOfPages());
     }
 
 
@@ -51,6 +51,7 @@ public class ContestantAdapter extends RecyclerView.Adapter<ContestantAdapter.Co
     class ContestantViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener
     {
         TextView rankTextView, readerNameTextView, numberOfPagesTextView;
+        private final String PAGES_STR = " pages";
 
         ContestantViewHolder(View itemView) {
             super(itemView);
@@ -66,7 +67,7 @@ public class ContestantAdapter extends RecyclerView.Adapter<ContestantAdapter.Co
         {
             rankTextView.setText(Integer.toString(rank));
             readerNameTextView.setText(name);
-            numberOfPagesTextView.setText(Integer.toString(pages));
+            numberOfPagesTextView.setText(Integer.toString(pages) + PAGES_STR);
         }
 
         @Override
