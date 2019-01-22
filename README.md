@@ -29,4 +29,4 @@ RoundedImageClass : https://stackoverflow.com/a/16208548/10240833
 [<img src="assets/4.png" width=200>](4.png)
 
 ## 3 - Example of the Main Screen
-[<img src="assets/5.png" width=200>](5.png)
+
