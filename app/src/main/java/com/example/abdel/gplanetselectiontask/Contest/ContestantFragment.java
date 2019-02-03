@@ -10,11 +10,11 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.abdel.gplanetselectiontask.CustomLayouts.TopWinnersCustomView;
 import com.example.abdel.gplanetselectiontask.R;
 
 import java.util.List;
@@ -28,9 +28,8 @@ public class ContestantFragment extends Fragment implements ContestantContract.V
     TextView issuesTextView;
     ConstraintLayout winnersConstraintLayout;
     RecyclerView contestantRecyclerView;
-    ImageView firstWinnerImageView,secondWinnerImageView,thirdWinnerImageView;
-    TextView firstWinnerNameTextView,secondWinnerNameTextView,thirdWinnerNameTextView;
-    TextView firstWinnerPagesTextView,secondWinnerPagesTextView,thirdWinnerPagesTextView;
+
+    TopWinnersCustomView firstWinnerCustomView, secondWinnerCustomView, thirdWinnerCustomView;
 
     private final String RECYCLER_POSITION = "position";
     private final String PAGES_STRING = " pages";
@@ -59,15 +58,9 @@ public class ContestantFragment extends Fragment implements ContestantContract.V
         winnersConstraintLayout = view.findViewById(R.id.winners_layout);
         contestantRecyclerView = view.findViewById(R.id.contestants_recyclerView);
 
-        firstWinnerImageView = view.findViewById(R.id.first_reader_imageView);
-        secondWinnerImageView = view.findViewById(R.id.second_reader_imageView);
-        thirdWinnerImageView = view.findViewById(R.id.third_reader_imageView);
-        firstWinnerNameTextView = view.findViewById(R.id.first_reader_name_textView);
-        secondWinnerNameTextView = view.findViewById(R.id.second_reader_name_textView);
-        thirdWinnerNameTextView = view.findViewById(R.id.third_reader_name_textView);
-        firstWinnerPagesTextView = view.findViewById(R.id.first_reader_pages_textView);
-        secondWinnerPagesTextView = view.findViewById(R.id.second_reader_pages_textView);
-        thirdWinnerPagesTextView = view.findViewById(R.id.third_reader_pages_textView);
+        firstWinnerCustomView = view.findViewById(R.id.first_winner_customView);
+        secondWinnerCustomView = view.findViewById(R.id.second_winner_customView);
+        thirdWinnerCustomView = view.findViewById(R.id.third_winner_customView);
 
         //Set Recycler
         contestantRecyclerView.setAdapter(mAdapter);
@@ -157,22 +150,25 @@ public class ContestantFragment extends Fragment implements ContestantContract.V
         if(contestantList.size() >= 1)
         {
             Contestant firstContestant = contestantList.get(0);
-            firstWinnerNameTextView.setText(firstContestant.getName());
-            firstWinnerPagesTextView.setText(Integer.toString(firstContestant.getNumberOfPages()) + PAGES_STRING);
+            firstWinnerCustomView.setRankTextView("1");
+            firstWinnerCustomView.setNameTextView(firstContestant.getName());
+            firstWinnerCustomView.setPagesTextView(Integer.toString(firstContestant.getNumberOfPages()) + PAGES_STRING);
         }
 
         if(contestantList.size() >= 2)
         {
             Contestant secondContestant = contestantList.get(1);
-            secondWinnerNameTextView.setText(secondContestant.getName());
-            secondWinnerPagesTextView.setText(Integer.toString(secondContestant.getNumberOfPages()) + PAGES_STRING);
+            secondWinnerCustomView.setRankTextView("2");
+            secondWinnerCustomView.setNameTextView(secondContestant.getName());
+            secondWinnerCustomView.setPagesTextView(Integer.toString(secondContestant.getNumberOfPages()) + PAGES_STRING);
         }
 
         if(contestantList.size() >= 3)
         {
             Contestant thirdContestant = contestantList.get(2);
-            thirdWinnerNameTextView.setText(thirdContestant.getName());
-            thirdWinnerPagesTextView.setText(Integer.toString(thirdContestant.getNumberOfPages()) + PAGES_STRING);
+            thirdWinnerCustomView.setRankTextView("3");
+            thirdWinnerCustomView.setNameTextView(thirdContestant.getName());
+            thirdWinnerCustomView.setPagesTextView(Integer.toString(thirdContestant.getNumberOfPages()) + PAGES_STRING);
         }
 
     }

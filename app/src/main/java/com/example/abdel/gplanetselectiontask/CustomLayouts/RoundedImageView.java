@@ -1,4 +1,4 @@
-package com.example.abdel.gplanetselectiontask;
+package com.example.abdel.gplanetselectiontask.CustomLayouts;
 
 import android.content.Context;
 import android.graphics.Bitmap;

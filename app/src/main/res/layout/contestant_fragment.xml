@@ -134,169 +134,39 @@
         <!-- Winners Part -->
         <!-- First Winner -->
 
-        <com.example.abdel.gplanetselectiontask.RoundedImageView
-            android:id="@+id/first_reader_imageView"
+        <com.example.abdel.gplanetselectiontask.CustomLayouts.TopWinnersCustomView
             android:layout_width="@dimen/match_constraints"
-            android:layout_height="@dimen/match_constraints"
-            android:layout_marginTop="@dimen/margin_top_single_item"
-            android:scaleType="fitCenter"
-            android:src="@drawable/placeholder"
-            android:background="@drawable/shadow"
-            app:layout_constraintDimensionRatio="1:1"
+            android:layout_height="wrap_content"
+            android:id="@+id/first_winner_customView"
+            app:image="@drawable/placeholder"
             app:layout_constraintLeft_toRightOf="@id/vertical_guideline1"
             app:layout_constraintRight_toLeftOf="@id/vertical_guideline2"
             app:layout_constraintTop_toBottomOf="@id/horizontal_guideline3"
-            app:layout_constraintVertical_weight="5" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/match_constraints"
-            android:layout_marginTop="@dimen/margin_top_single_item"
-            android:textColor="@color/colorWhite"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/first_reader_imageView" />
-
-        <TextView
-            style="@style/TextAppearance.AppCompat.Large"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/match_constraints"
-            android:background="@drawable/round_solid_circle"
-            android:padding="@dimen/rank_padding"
-            android:text="@string/first_reader_rank"
-            android:textColor="@color/colorText"
-            app:layout_constraintLeft_toLeftOf="@id/vertical_guideline1"
-            app:layout_constraintRight_toRightOf="@id/vertical_guideline2"
-            app:layout_constraintTop_toBottomOf="@id/horizontal_guideline4" />
-
-        <TextView
-            android:id="@+id/first_reader_name_textView"
-            style="@style/TextAppearance.AppCompat.Medium"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/match_constraints"
-            android:textColor="@color/colorWhite"
-            app:layout_constraintLeft_toLeftOf="@id/vertical_guideline1"
-            app:layout_constraintRight_toRightOf="@id/vertical_guideline2"
-            app:layout_constraintTop_toBottomOf="@id/first_reader_rank_textView" />
-
-        <TextView
-            android:id="@+id/first_reader_pages_textView"
-            style="@style/TextAppearance.AppCompat.Medium"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/match_constraints"
-            android:textColor="@color/colorWhite"
-            android:textStyle="bold"
-            app:layout_constraintLeft_toLeftOf="@id/vertical_guideline1"
-            app:layout_constraintRight_toRightOf="@id/vertical_guideline2"
-            app:layout_constraintTop_toBottomOf="@id/first_reader_name_textView" />
+            />
 
         <!-- Second Winner -->
 
-        <com.example.abdel.gplanetselectiontask.RoundedImageView
-            android:id="@+id/second_reader_imageView"
+        <com.example.abdel.gplanetselectiontask.CustomLayouts.TopWinnersCustomView
             android:layout_width="@dimen/match_constraints"
-            android:layout_height="@dimen/match_constraints"
-            android:layout_marginTop="@dimen/margin_top_single_item"
-            android:scaleType="fitCenter"
-            android:src="@drawable/placeholder"
-            android:background="@drawable/shadow"
-            app:layout_constraintDimensionRatio="1:1"
+            android:layout_height="wrap_content"
+            android:id="@+id/second_winner_customView"
+            app:image="@drawable/placeholder"
             app:layout_constraintLeft_toLeftOf="@id/vertical_guideline3"
             app:layout_constraintRight_toLeftOf="@id/vertical_guideline4"
             app:layout_constraintTop_toBottomOf="@id/horizontal_guideline5"
-            app:layout_constraintVertical_weight="5" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/match_constraints"
-            android:layout_marginTop="@dimen/margin_top_single_item"
-            android:textColor="@color/colorWhite"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/first_reader_imageView" />
-
-        <TextView
-            style="@style/TextAppearance.AppCompat.Medium"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/match_constraints"
-            android:background="@drawable/round_solid_circle"
-            android:padding="@dimen/rank_padding"
-            android:text="@string/second_reader_rank"
-            android:textColor="@color/colorText"
-            app:layout_constraintLeft_toLeftOf="@id/vertical_guideline3"
-            app:layout_constraintRight_toRightOf="@id/vertical_guideline4"
-            app:layout_constraintTop_toBottomOf="@id/horizontal_guideline6" />
-
-        <TextView
-            android:id="@+id/second_reader_name_textView"
-            style="@style/TextAppearance.AppCompat.Medium"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/match_constraints"
-            android:textColor="@color/colorWhite"
-            app:layout_constraintLeft_toLeftOf="@id/vertical_guideline3"
-            app:layout_constraintRight_toRightOf="@id/vertical_guideline4"
-            app:layout_constraintTop_toBottomOf="@id/first_reader_rank_textView" />
-
-        <TextView
-            android:id="@+id/second_reader_pages_textView"
-            style="@style/TextAppearance.AppCompat.Medium"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/match_constraints"
-            android:textColor="@color/colorWhite"
-            android:textStyle="bold"
-            app:layout_constraintLeft_toLeftOf="@id/vertical_guideline3"
-            app:layout_constraintRight_toRightOf="@id/vertical_guideline4"
-            app:layout_constraintTop_toBottomOf="@id/first_reader_name_textView" />
+            />
 
         <!-- Third Winner -->
 
-        <com.example.abdel.gplanetselectiontask.RoundedImageView
-            android:id="@+id/third_reader_imageView"
+        <com.example.abdel.gplanetselectiontask.CustomLayouts.TopWinnersCustomView
             android:layout_width="@dimen/match_constraints"
-            android:layout_height="@dimen/match_constraints"
-            android:layout_marginTop="@dimen/margin_top_single_item"
-            android:scaleType="fitCenter"
-            android:src="@drawable/placeholder"
-            android:background="@drawable/shadow"
-            app:layout_constraintDimensionRatio="1:1"
+            android:layout_height="wrap_content"
+            android:id="@+id/third_winner_customView"
+            app:image="@drawable/placeholder"
             app:layout_constraintLeft_toLeftOf="@id/vertical_guideline5"
             app:layout_constraintRight_toLeftOf="@id/vertical_guideline6"
             app:layout_constraintTop_toBottomOf="@id/horizontal_guideline5"
-            app:layout_constraintVertical_weight="5" />
-
-        <TextView
-            android:id="@+id/first_reader_rank_textView"
-            style="@style/TextAppearance.AppCompat.Medium"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/match_constraints"
-            android:background="@drawable/round_solid_circle"
-            android:padding="@dimen/rank_padding"
-            android:text="@string/third_reader_rank"
-            android:textColor="@color/colorText"
-            app:layout_constraintLeft_toLeftOf="@id/vertical_guideline5"
-            app:layout_constraintRight_toRightOf="@id/vertical_guideline6"
-            app:layout_constraintTop_toBottomOf="@id/horizontal_guideline6" />
-
-        <TextView
-            android:id="@+id/third_reader_name_textView"
-            style="@style/TextAppearance.AppCompat.Medium"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/match_constraints"
-            android:textColor="@color/colorWhite"
-            app:layout_constraintLeft_toLeftOf="@id/vertical_guideline5"
-            app:layout_constraintRight_toRightOf="@id/vertical_guideline6"
-            app:layout_constraintTop_toBottomOf="@id/first_reader_rank_textView" />
-
-        <TextView
-            android:id="@+id/third_reader_pages_textView"
-            style="@style/TextAppearance.AppCompat.Medium"
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/match_constraints"
-            android:textColor="@color/colorWhite"
-            android:textStyle="bold"
-            app:layout_constraintLeft_toLeftOf="@id/vertical_guideline5"
-            app:layout_constraintRight_toRightOf="@id/vertical_guideline6"
-            app:layout_constraintTop_toBottomOf="@id/first_reader_name_textView" />
+            />
 
     </android.support.constraint.ConstraintLayout>
 

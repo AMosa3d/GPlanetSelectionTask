@@ -20,7 +20,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintRight_toLeftOf="@id/contestant_photo_imageView" />
 
-    <com.example.abdel.gplanetselectiontask.RoundedImageView
+    <com.example.abdel.gplanetselectiontask.CustomLayouts.RoundedImageView
         android:id="@+id/contestant_photo_imageView"
         android:layout_width="@dimen/match_constraints"
         android:layout_height="@dimen/match_constraints"
